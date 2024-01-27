@@ -130,12 +130,6 @@ title [Cleaning  Windows Icon Cache] [Trapped]
 del %LocalAppData%\IconCache.db /F /Q /S >nul 2>nul
 del "%LocalAppData%\Microsoft\Windows\Explorer\iconcache_*.db" /F /Q /S >nul 2>nul
 
-if exist %programdata%\ET\chck61.lbool del %programdata%\ET\chck61.lbool
-title [/]>nul 2>nul
-title [\]>nul 2>nul
-title [/]>nul 2>nul
-title [\]>nul 2>nul
-title [/]>nul 2>nul
 powershell -Command "Write-Host ' [Disabling] Xbox Services ' -F darkgray -B black"
 
 title [Disabling Xbox Services] [Trapped]
